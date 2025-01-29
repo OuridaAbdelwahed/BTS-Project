@@ -1,0 +1,201 @@
+#Total {
+    width: 950px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+}
+.Header{
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    display: block;
+    height: 190px;
+}
+.Logo {
+    float: left;
+}
+.Menu {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 15%;
+    font-family: sans-serif;
+}
+.Menu li {
+    display: inline;
+    margin: 5px;
+
+}
+.Menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+
+}
+.Menu a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(203, 53, 33);
+
+}
+.Version {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    font-family: sans-serif;
+}
+.Version li{
+    list-style-type: none;
+}
+.Version a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.Version a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:  rgb(203, 53, 33);
+}
+.PageRight {
+    position: absolute;
+    top: 50px;
+    right: -5px;
+}
+.titreBaniere {
+    color:  rgb(203, 53, 33);
+    text-transform: capitalize;
+    font-size: 27px;
+}
+.Ariane {
+    font-family: sans-serif;
+
+}
+.Encours {
+    text-decoration: none;
+    color: #000;
+}
+.Ariane a:first-of-type,a:nth-of-type(2){
+    color: #000;
+    text-decoration: underline;
+}
+.MenuCol {
+    float: left;
+    height: 380px;
+    text-align: left;
+}
+.MenuCol li,a{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 15px;
+}
+.MenuCol h2 a {
+    color: rgb(203, 53, 33);
+    margin-left: 40px;
+    font-family: arial;
+    font-size: 17px;
+    text-transform: uppercase;
+
+}
+.ActiveTop > .paddingRight {
+    color: red;
+}
+
+.paddingRight {
+    color: #000000;
+}
+.Content {
+    float: right;
+    width: 650px;
+    position: relative;
+}
+.Content h3,h1 {
+  color: red;
+}
+
+.Grid_130 {
+    float: left;
+}
+.EtapeFirst,.Etape,.Etape1,.EtapeLast {
+    display: inline-block;
+    margin: 0px 15px;
+    font-family: 'Lucida Sans';
+    font-size: 14px;
+}
+.Etape1 {
+    position: relative;
+    top: 17px;
+    width: 150px;
+}
+address {
+    font-style: normal;
+    text-align: center;
+}
+span {
+    font-style: normal;
+    font-weight: 800;
+}
+.Clear {
+    margin: 29px 0px 0px 0px;
+}
+.Clear > .Boutonv2-2 > .BoutonTexte{
+    color: #000;
+    margin: 29 0px 0px 20px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+.Vignette {
+    display: inline;
+    margin: 0px 3px;
+}
+.VignetteLast {
+    display: inline;
+
+}
+.Footer  {
+    position: relative;
+}
+.Footer1 {
+    position: absolute;
+    bottom: -905px;
+    left: -50px;
+}
+.Footer1 li {
+    display: inline;
+    margin: 20px;
+}
+.Footer2 li {
+    display: inline;
+    margin: 5px;
+    padding-left: 10px;
+}
+.Footer2  li:nth-of-type(2) {
+    border-left: 1px solid #ccc;
+}
+.Footer2 li:nth-of-type(3) {
+    border-left: 1px solid #ccc;
+}
+.Footer2  li:last-of-type {
+    border-left: 1px solid #ccc;
+}
+.Footer1 a,.Footer2 a {
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+.Footer1 a:hover,.Footer2 a:hover {
+    color: rgb(203, 53, 33);
+}
+.Footer2 {
+    position: absolute;
+    bottom: -904px;
+    left: 450px;
+}
+.FondContentOn  .fixe193 {
+    background-color: #ccc;
+    padding: 10px 0px;
+}
+h5 {
+    padding: 0px;
+    margin: 0px;
+}
