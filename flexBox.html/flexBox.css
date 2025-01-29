@@ -1,0 +1,29 @@
+body {
+    direction: ltr;
+}
+.container {
+    width: 1000px;
+    height: 400px;
+    background-color: #ccc;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+}
+.container div {
+    width: 150px;
+    height: 300px
+}
+.child1 {
+    background-color: red;
+    flex-basis: 30px;
+}
+.child2{
+    background-color: #080;
+}
+.child3{
+    background-color: aqua;
+}
+.child4{
+    background-color: black;
+}

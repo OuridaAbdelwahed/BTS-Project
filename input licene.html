@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>input</title>
+         <!-- <style> --
+                        
+            h1
+            {
+                text-align: left;
+                font-family: monospace;
+                font-size: 35px;
+                margin-top: 0px;
+                font-weight: bolder;
+                color: red;
+                position: fixed;
+                top: 30px;
+            }
+            input {
+                padding: 0.5%;
+                margin: 2px;
+                border: 2px solid red;
+                color: rgb(0, 0, 0);
+                border-radius: 10px;
+
+            }
+            legend {
+                border-radius: 10px;
+                border: 2px solid #000;
+                color: #8e1111;
+                font-size: x-large;
+                font-weight: bold;
+                text-align: center;
+                padding: 2px;
+                margin: 2px;
+                background-color: rgb(221, 162, 244, 0.785);
+            }
+            fieldset {
+                margin-top: 70px;
+                border: 2px solid #e50606;
+                border-radius: 10px;
+                background: rgba(221, 162, 244, 0.785);
+            }
+            label  {
+                text-transform: capitalize;
+            }
+            .button:hover {
+                color: #fff;
+                background-color: #000;
+                border: #e40d0d;
+            }
+            textarea {
+                color: blue;
+            }
+
+            .dot
+            {       
+                position: fixed;
+                left: 800px;
+                top: 20px;
+            }
+            .dot input 
+            {
+                background-color:red;
+                color:#fff;
+                border: 1px solid red ;
+                border-radius: 15px;
+                margin: 8px;
+                padding: 8px;
+
+            }
+
+            .dot input:hover
+            {
+                background-color: aqua;
+                color: black;
+                border: aqua;
+                padding: 10px;
+            }
+
+        </style>  -->
+    </head>
+    <body>
+
+
+        <h1>input exemples</h1>
+        <div class="dot">
+            <input type="button" value="home">
+            <input type="button" value="setting">
+            <input type="button" value="privaty">
+            <input type="button" value="about">
+        </div>
+
+
+
+      <fieldset>
+        <legend>Formulaire</legend>
+        <form action="../projet VScode/new projet after he course/new.html">
+            <label for="text">name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="name" id="t1" placeholder="type ur name"> <br>
+
+
+            <label for="email">email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" required name="email" placeholder="type ur email" list="list" maxlength="30" size=""><br>
+
+
+            <datalist id="list">
+                <option value="ouridaabdelwahedxp@hotmail.com">
+                <option value="ouridaabdelwahed@gmail.com">
+            </datalist>
+            <label for="password">Password :</label>
+            <input type="password" name="password" placeholder="type ur password" maxlength="10" required><br>
+            <label for="checkbox">remember me</label>
+            <input type="checkbox" name="" id="">
+            
+            <br>
+
+            <hr>
+
+                    <h4>choose your favorite language</h4>
+                <input type="radio" name="lg" id="">Html <br>
+                <input type="radio" name="lg" id="">Php <br>
+                <input type="radio" name="lg" id="">JavaScript <br>
+                <input type="radio" name="lg" id="">Python <br>
+                <input type="radio" name="lg" id="">Ruby <br>
+                <input type="radio" name="lg" id="">Java <br>
+                <input type="radio" name="lg" id="">Css <br>
+                <input type="radio" name="lg" id="">Json <br>
+                <input type="radio" name="lg" id="">JQuery
+
+
+            <hr>
+                <h4>Choose your best framwork</h4>
+                <select name="als" id="">
+                    <optgroup label="JS framwork">
+                        <option value="">Node JS</option>
+                        <option value="">React JS</option>
+                        <option value="">TypeScript JS</option>
+                        <option value="">ShellScript</option>
+                        <option value="">...</option>
+                       
+                    </optgroup>
+                    <optgroup label=" C++ Framwork">
+                        <option value="">CUDA-C++</option>
+                        <option value="">Objective-C++</option>
+                        <option value=""></option>
+                    </optgroup>
+                </select>
+            <hr>
+
+
+            <label for="">commentaries :</label> <br>
+
+
+            <textarea placeholder="type ur comment" style="margin: 0px 0px 0px 5px;"></textarea>
+
+            <br>
+
+            
+
+            <br>
+
+            <input type="datetime-local" name="" id="">
+
+            <br>
+
+
+            <input type="submit" class="button" value="Log In">
+            <input type="reset" class="button" value="Reset All">
+        </form>
+
+      </fieldset>
+    </body>
+</html>

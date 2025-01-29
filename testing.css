@@ -1,0 +1,11 @@
+body {
+    background: 50% -30% url(image/1674413035224.jpg) #eb2929 no-repeat ;
+}
+div {
+    text-align: center;
+    color: #000;
+    direction: ltr;
+    font-family:  Tahoma, Verdana, sans-serif;
+    word-spacing: 15px;
+    letter-spacing: 15px;
+}

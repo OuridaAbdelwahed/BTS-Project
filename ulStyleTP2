@@ -1,0 +1,13 @@
+.container {
+    background: #ccc;
+    width: 1000px;
+    margin: 50px auto;
+}
+.container ol {
+    display: inline;
+    list-style-type: none;
+
+}
+.container ol ul {
+    list-style-type: none;
+}

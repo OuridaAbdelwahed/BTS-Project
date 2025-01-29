@@ -1,0 +1,65 @@
+p {
+    color: blue;
+    background-color: aquamarine;
+}
+/* @media screen and (device-width:1024px) {
+    p {
+        color: red;
+        background-color: black;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:800px) {
+    p {
+        color: white;
+        background-color: black;
+        font-size: 25px;
+    }
+} */
+
+@media (min-width: 1400px) {
+    p {
+        color: yellow;
+        background-color: black;
+        font-size: 25px;
+    }
+  }
+
+  
+  @media (min-width: 1200px) { 
+    p {
+        color: blue;
+        background-color: black;
+        font-size: 25px;
+    }
+ }
+ 
+@media (min-width: 768px) { 
+    p {
+        color: #080;
+        background-color: black;
+        font-size: 25px;
+    }
+ }
+
+
+
+ 
+@media (min-width: 992px) {  
+    p {
+        color: violet;
+        background-color: black;
+        font-size: 25px;
+    }
+}
+
+
+
+
+  @media (min-width: 576px) {
+    p {
+        color: rgb(164, 68, 68);
+        background-color: rgb(52, 23, 43);
+        font-size: 25px;
+    }
+  }

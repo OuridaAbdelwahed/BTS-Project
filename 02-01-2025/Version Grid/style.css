@@ -1,0 +1,277 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  background-color: #e6bccd;
+}
+
+.page {
+  width: 960px;
+  margin: auto;
+  display:  grid;
+  display: grid;
+  -ms-grid-columns: 160px auto 160px;
+  grid-template-columns: 160px auto 160px;
+  -ms-grid-rows: auto auto 180px auto auto;
+  grid-template-rows: auto auto 180px auto auto;
+  grid-template-areas:  "header header header" 
+                        "menu menu menu" 
+                        "hero hero hero"
+                        "aside1 content aside2"
+                        "footer footer footer";
+  border-radius: 4px;
+  overflow: hidden;
+}
+input.btn-hamburger { 
+  display: none; 
+  } 
+@media screen and (max-width: 575px) { 
+  body { 
+    margin: 0; 
+      } 
+      .page { 
+    border-radius: 0px; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(6, auto); 
+    grid-template-areas: "header " 
+                               "menu" 
+                                "content" 
+                               "aside1" 
+                                "aside2" 
+                                "footer"; 
+      } 
+      nav.main-nav ul { 
+        flex-direction: column; 
+      } 
+      nav.main-nav a { 
+        border-radius: 0px; 
+      } 
+      nav.main-nav li:first-of-type a { 
+        border-radius: 5px 5px 0 0; 
+      } 
+      nav.main-nav li:last-of-type a { 
+        border-radius: 0 0 5px 5px; 
+      } 
+      .home div.hero { 
+        background: none; 
+        display: none; 
+      } 
+      aside.main_aside_left, aside.main_aside_right { 
+        border: 5px solid #7e52a0; 
+        border-width: 5px 0 0 0; 
+      } 
+      footer.main_footer ul { 
+        margin: 0; 
+        padding: .5em 1em; 
+        border-top: 1px solid  #d295bf; 
+        width: 100%; 
+      } 
+          /* Masquage de la case à cocher */ 
+    input.btn-hamburger { 
+      display: none; 
+      } 
+      /* Création des trois traits du bouton de menu */ 
+      .btn-hamburger-label { 
+        width: 30px; 
+        height: 30px; 
+        margin: 10px auto 10px; 
+        padding-top: 2px; 
+        display: flex; 
+        justify-content: space-between; 
+        flex-direction: column; 
+        cursor: pointer; 
+      } 
+      .btn-hamburger-label span, .btn-hamburger-label::before,.btn-hamburger
+      label::after { 
+        content: ""; 
+        display: block; 
+        width: 100%; 
+        height: 7px; 
+        margin: 2px 0; 
+        background-color: #29274c; 
+        border-radius: 10px; 
+      } 
+      input.btn-hamburger { 
+        display: none; 
+      } 
+      input.btn-hamburger ~ div { 
+        transition: all 1s; 
+        overflow: hidden; 
+        max-height: 0px; 
+      } 
+      input.btn-hamburger:checked ~ div { 
+        max-height: 200px; 
+      } 
+} 
+@media screen and (min-width: 576px) and (max-width: 960px) { 
+  .page { 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto 180px auto auto auto; 
+  grid-template-areas: "header header"  
+  "menu menu"  
+  "hero hero"  
+  "content content"  
+  "aside1 aside2"  
+  "footer footer";
+} 
+nav.main-nav ul { 
+  justify-content: flex-start; 
+  } 
+  nav.main-nav a { 
+    border-radius: 0px; 
+  } 
+  nav.main-nav li:first-of-type { 
+    border-radius: 5px 0 0 5px; 
+  } 
+  nav.main-nav li:last-of-type { 
+    border-radius: 0 5px 5px 0; 
+  } 
+  /* Modification des bordures pour les deux éléments aside */ 
+  aside.main_aside_left,  aside.main_aside_right { 
+    border: 5px solid #7e52a0; 
+  } 
+  aside.main_aside_left { 
+    border-width: 5px 3px 0 0; 
+  } 
+  aside.main_aside_right { 
+    border-width: 5px 0 0 3px; 
+  } 
+} 
+@media print { 
+  .page { 
+
+  grid-template-columns: 1fr ; 
+  grid-template-rows: auto auto; 
+  grid-template-areas: "header" 
+  "content";
+}
+header.main_header {
+   grid-row: 1;
+   grid-column: 1;
+   -ms-grid-column-span: 3;
+  grid-area: header;
+  background-color: #29274c;
+  color: #d295bf;
+  width: 100%;
+  font-family: 'Anton', sans-serif;
+  font-size: 2em;
+  padding: .5em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header.main_header::first-letter {
+  color: #ffffff;
+}
+}
+
+nav.main-nav {
+   grid-row: 2;
+   grid-column: 1;
+   -ms-grid-column-span: 3;
+  grid-area: menu;
+  background-color: #7e52a0;
+  width: 100%;
+}
+
+nav.main-nav ul {
+  display: -webkit-box;
+  display:  flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: .5em;
+  padding: 0;
+  list-style: none;
+}
+
+nav.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #29274c;
+  display: block;
+  min-width: 120px;
+  padding: .3em;
+  border-radius: 4px;
+  text-align: center;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+nav.main-nav a.active, nav.main-nav a:hover {
+  background-color: #d295bf;
+  color: #29274c;
+}
+
+.home div.hero {
+   grid-row: 3;
+   grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: hero;
+  width: 100%;
+  height: 180px;
+  background-image: url("img.jpg");
+  position: relative;
+  background-size: 960px;
+}
+
+.home div.hero div {
+  background-color: #7e52a0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+}
+
+section.main_content {
+  grid-row: 4;
+  grid-column: 2;
+  grid-area: content;
+  background-color: #ffffff;
+  min-height: 200px;
+  padding: .5em;
+}
+
+aside.main_aside_left, aside.main_aside_right {
+  background-color: #d295bf;
+  color: #ffffff;
+  padding: .5em;
+}
+
+aside.main_aside_left {
+   grid-row: 4;
+   grid-column: 1;
+  grid-area: aside1;
+  border-right: 5px solid #7e52a0;
+}
+
+aside.main_aside_right {
+   grid-row: 4;
+   grid-column: 3;
+  grid-area: aside2;
+  border-left: 5px solid #7e52a0;
+}
+
+footer.main_footer {
+  grid-row: 5;
+  grid-column: 1;
+  grid-area: footer;
+  background-color: #012a36;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+
+footer.main_footer ul {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33%;
+  list-style: none;
+}
+
+footer.main_footer a {
+  color: #e6bccd;
+  text-decoration: none;
+  font-size: 0.9em;
+}

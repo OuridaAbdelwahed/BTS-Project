@@ -1,0 +1,68 @@
+.parent {
+    background-color: #ccc;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 50px 800px 50px;
+    grid-template-areas: "c1 c2 c2 c2 c2" 
+                         "c3 c3 c3 c3 c4" 
+                         "c5 c5 c5 c5 c5";
+                        gap: auto ;
+
+}
+.parent div {
+    color: white;
+   
+}
+.child1 {
+    grid-area: c1;
+    background-color: red;
+    
+}
+.child2 {
+    grid-area: c2;
+    background-color: aqua;
+}
+.child3 {
+    grid-area: c3;
+    display: grid;
+    background-color: rgb(15, 122, 122);
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,200px);
+    row-gap: 100px;
+    grid-template-areas: ". a1 a1 . a2  a2 "
+                        ". a3 a3 . a4 a4";
+}
+.a1 {
+    background-color: #ccc;
+    grid-area: a1;
+    margin: 20px 20px;
+}
+.a2 {
+    background-color: #ccc;
+    grid-area: a2;
+    margin: 20px 20px;
+}
+.a3 {
+    background-color: #ccc;
+    grid-area: a3;
+    margin: 20px 20px;
+}
+.a4 {
+    background-color: #ccc;
+    margin: 20px 20px;
+    grid-area: a4;
+}
+.child4 {
+    grid-area: c4;
+    background-color: black;
+}
+.child5 {
+    grid-area: c5;
+    background-color: blueviolet;
+}
+
+
